@@ -50,6 +50,10 @@ class BoundCameraMode extends CameraMode {
     const firstPos = firstPanelPrev + alignPos;
     const lastPos = lastPanelNext - viewportSize + alignPos;
 
+    console.log(isBiggerThanViewport);
+    console.log(firstPos);
+    console.log(lastPos);
+
     if (isBiggerThanViewport) {
       return { min: firstPos, max: lastPos };
     } else {
